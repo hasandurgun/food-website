@@ -1,0 +1,51 @@
+.blogs .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .boxcontainer .box {
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.blogs .boxcontainer .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+    border-top-left-radius: 3rem;
+    /*resmin sol ve sağ üstlerine yuvarlanmıyorsa bunu ve alttakini kullanarak yapabiliriz*/
+    border-top-right-radius: 3rem;
+}
+
+.blogs .boxcontainer .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .boxcontainer .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .boxcontainer .box .content {
+    padding: 2rem;
+}
+
+.blogs .boxcontainer .box .tittle {
+    line-height: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.blogs .boxcontainer .box span {
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .boxcontainer .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}

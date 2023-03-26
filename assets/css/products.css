@@ -1,0 +1,104 @@
+.products .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .boxcontainer .box {
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    border-radius: 3rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.products .boxcontainer .box .boxhead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+.products .boxcontainer .box .boxhead .title {
+    font-size: 1.4rem;
+}
+
+.products .boxcontainer .box .boxhead .name {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: start;
+    overflow-wrap: anywhere;
+    /*yazının taşmaması için*/
+}
+
+.products .boxcontainer .dark-bg .boxhead .name,
+.products .boxcontainer .dark-bg .boxhead .tittle {
+    color: #fff;
+}
+
+.products .boxcontainer img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    border-radius: 3rem;
+}
+
+.products .boxcontainer .dark-bg img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: unset;
+}
+
+.products .boxcontainer .boxbuton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.products .boxcontainer .boxbuton .info {
+    display: flex;
+    flex-direction: column;
+    /*alt alta getir*/
+    align-items: flex-start;
+    /*başa getir*/
+}
+
+.products .boxcontainer .boxbuton .info .price {
+    font-size: 3rem;
+}
+
+.products .boxcontainer .boxbuton .info .amount {
+    font-size: 1.4rem;
+}
+
+.products .boxcontainer .dark-bg .boxbuton .info .price,
+.products .boxcontainer .dark-bg .boxbuton .info .amount {
+    color: #fff;
+}
+
+.products .boxcontainer .boxbuton .productbtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 0.2rem solid var(--main-color);
+}
+
+.products .boxcontainer .boxbuton .productbtn a i {
+    font-size: 1.6rem;
+    color: var(--main-color);
+}

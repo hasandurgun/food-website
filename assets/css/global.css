@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #e84242;
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+/*Base HTML codes*/
+html {
+    font-size: 62.5%;
+    /*1rem=10px olur normalde 1rem=16px demek*/
+    overflow-x: hidden;
+    /*altta çıkan scrollu kapatır*/
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    /*sitenin sağındaki scrollu şekillendirmek için*/
+    width: 0.8rem;
+    background-color: white;
+}
+
+html::-webkit-scrollbar track {
+    /*scrollun arka planı*/
+    background-color: transparent;
+    /*renksiz*/
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 3rem;
+    background-color: var(--black-color);
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+section {
+    padding: 3.5rem 7%;
+    /*yazdığımız bütün sectionlar aynı hizada olması için*/
+}
+
+a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*divleri belirli kalıba sokmaya yarar*/
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /*cümle içindeki her kelimenin baş harfini büyük yapmış oluruz.*/
+    transition: 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.searchinput {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}

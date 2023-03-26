@@ -1,0 +1,28 @@
+.home {
+    min-height: 100vh;
+    /*bir ekranın göründüğü yer kadar yer kapla aşağı uzama*/
+    background: url(../../images/home.jpg) no-repeat;
+    background-size: cover;
+    /*tam boyutunu sığdırır*/
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300px;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #ccc;
+}
